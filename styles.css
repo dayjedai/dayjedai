@@ -1,0 +1,104 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg.png);
+    background-size: cover;
+    background-position-x: center;
+    font-family: Inconsolata Semibold, monospace;
+    text-align: center;
+}
+
+#clock, #date {
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+    font-family: Calibri, sans-serif;
+    color: rgb(235, 203, 139);
+}
+
+.clockdate {
+    margin-top: 50px;
+}
+
+.input_box {
+    margin: 5px auto;
+    width: 370px;
+    height: 45px;
+    white-space: nowrap;
+    position: relative;
+    background-color: rgba(142, 181, 220, 0.7);
+    backdrop-filter: blur(3px) grayscale(40%);
+    border: none;
+    color: rgba(46, 52, 64, 0.8);
+    text-align: center;
+    border-radius: 5px;
+    font-family: Calibri, sans-serif;
+    font-size: 16pt;
+    transition: background .55s ease;
+}
+
+.input_box:hover, .input_box:focus, .input_box:active{
+    outline:none;
+    background-color: rgba(142, 181, 220, 1);
+    backdrop-filter: blur(1px) grayscale(20%);
+}
+
+.input_box::placeholder {
+    color: rgb(46, 52, 64);
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding-top: 1px;
+    color: rgb(163, 190, 140);
+    font-weight: bold;
+    font-size: 16pt;
+    text-align: left;
+}
+
+.productivity, .recreation {
+    height: 390px;
+    width: 260px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 4px;
+    margin-top: 1.5%;
+    resize: horizontal;
+    background-color: rgba(29, 33, 41, 0.3);
+    backdrop-filter: blur(4px) /* grayscale(10%); */
+}
+
+.button {
+    color: rgb(180, 142, 173);
+    font-size: 14pt;
+    text-decoration: none;
+    text-align: right;
+    font-weight: 500;
+}
+
+a:hover {
+    color: rgb(2, 1, 45);
+    padding: 10px, 10px, 10px, 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 14pt;
+    background-color: rgb(180, 142, 173);
+    transition: background .3s ease;
+}
+
+h1 {
+    font-size: 16pt;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 3px;
+    color: rgb(229, 233, 240)
+}
+
+.kur {
+    color: rgb(208, 135, 112);
+}
